@@ -2,24 +2,34 @@
 
 ## 1. [Crash Insurance and the G10 Carry Premium](https://github.com/Amanjeet-S/Crash-Insurance-G10-Carry-Premium)
 
-This study examines whether crash-insurance costs explain the G10 currency carry premium and its change across interest-rate regimes. SABR volatility-smile calibration, protective-option pricing and dependence-robust inference connect currency option quotes to portfolio returns. The results give partial support to the regime-shift explanation and show how assumptions about unquoted tails constrain conclusions about option-implied skewness.
+This study tests the crash-risk explanation for currency carry returns by pricing protective options on a G10 carry portfolio. SABR volatility-smile calibration and hedge-cost decompositions connect insurance prices to realised returns, with inference allowing for serial dependence. The forward-discount spread rose after 2022 while the skew premium for protection remained broadly unchanged. Bounds on option-implied moments also show how conclusions about skewness depend on assumptions beyond the quoted strikes.
+
+[Paper](https://github.com/Amanjeet-S/Crash-Insurance-G10-Carry-Premium/blob/main/paper/Crash_Insurance_and_the_G10_Carry_Premium.pdf) · [Reproduction](https://github.com/Amanjeet-S/Crash-Insurance-G10-Carry-Premium/blob/main/docs/reproducing_paper.md)
 
 ## 2. [Option Exercise-Policy Evaluation](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation)
 
-A finite-calendar put model provides a controlled setting for separating exercise-policy loss from error in its assessment. Regression Monte Carlo, conditional expectations and martingale upper bounds support policy evaluation and computational allocation. Centred value functions reduce the estimated gaps between upper bounds and policy values by approximately 91–95 per cent in the retained comparisons, without changing exercise decisions.
+The project separates the quality of an option-exercise strategy from the tightness of its numerical assessment. Regression Monte Carlo builds stopping rules for a funded put model, while conditional expectations generate martingale bounds on the value forgone by those decisions. Centred value functions reduce estimated gaps between upper bounds and strategy values by approximately 91–95 per cent in the retained comparisons, without changing exercise decisions. Further experiments distinguish training variability from evaluation noise to assess how computation should be allocated.
 
-## 3. [Deep Hedging: CVaR Replication](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication)
+[Paper](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation/blob/main/paper/Exercise_Policy_Loss_under_Computational_and_Financial_Constraints.pdf) · [Reproduction](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation/blob/main/docs/reproducing_paper.md)
 
-This independent replication compares neural-network hedging with delta hedging under GJR-GARCH volatility. Conditional value at risk (CVaR) supplies the optimisation objective; separate training, validation and test simulations assess tail losses, with further checks on calibration and initial capital. The empirical interval for the 95 per cent CVaR improvement includes zero, and the difference strategy fails the paper's statistical-arbitrage criterion in this sample.
+## 3. [Deep Hedging: An Independent Replication](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication)
+
+This replication tests whether neural-network hedging reduces tail losses relative to delta hedging, and whether trading the difference between the two hedges meets a published statistical-arbitrage criterion. Networks minimise conditional value at risk (CVaR) under simulated GJR-GARCH volatility; independent test paths and calibration controls assess the resulting hedge. The empirical interval for improvement in 95 per cent CVaR includes zero, and the difference strategy fails the criterion in the retained sample.
+
+[Research note](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication/blob/main/docs/replication_report.pdf) · [Executed notebook](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication/blob/main/reproduction.ipynb)
 
 ## 4. [Quantum Basket Pricing](https://github.com/Amanjeet-S/Quantum-Basket-Pricing) (private)
 
-The project investigates how approximation error and implementation costs affect capped basket-derivative valuation under a lognormal model. Gaussian conditioning and error bounds connect pricing to quantum resource estimates and classical benchmarks. Companion studies develop PDE and Monte Carlo prices and Greeks, parameter inference and constrained mean-square hedging through convex optimisation. All financial experiments are synthetic; practical quantum advantage remains unestablished.
+The working paper investigates how payoff representation changes the cost of quantum pricing for capped basket derivatives. Gaussian conditioning and certified error bounds support comparisons under matched model, accuracy and confidence requirements, including preparation and arithmetic costs. Across four synthetic contracts, shared-threshold preparation reduces logical T-gate upper bounds by 2.34–10.00 per cent relative to the cheaper of two equally optimised implementations. Companion studies cover PDE pricing, parameter inference and constrained hedging. These results do not establish practical quantum advantage.
 
-## 5. [Monetary Policy](https://github.com/Amanjeet-S/Monetary-Policy) (private)
+[Papers](https://github.com/Amanjeet-S/Quantum-Basket-Pricing/blob/main/paper/README.md)
 
-This study asks whether the first-year fall in US durable purchases after monetary tightening is offset over the following two years. Narrative policy shocks, cumulative-response regressions and dependence-robust joint inference distinguish recovery in monthly purchase flows from recovery in cumulative purchases. The estimated cumulative durable response is negative, with precision sensitive to policy-history controls and leverage adjustment.
+## 5. [Monetary Tightening and Household Purchases](https://github.com/Amanjeet-S/Monetary-Policy) (private)
+
+Durable purchases can return to their previous rate while leaving a cumulative shortfall. This study tests whether the first-year decline in US durable purchases after monetary tightening is offset over the next two years. Narrative policy shocks and cumulative-response regressions estimate early and later responses jointly, with inference allowing for serial dependence. At the point estimates, later purchases deepen the initial shortfall; longer policy-history controls and leverage adjustment weaken precision.
+
+[Paper](https://github.com/Amanjeet-S/Monetary-Policy/blob/main/paper/monetary_policy.pdf)
 
 ## 6. [Investment Memos](https://github.com/Amanjeet-S/Investment-Memos)
 
-Company research on StepStone, HarbourVest Global Private Equity, Nakilat and Sixt examines how accounting, contracts and financing affect equity value. Financial-statement analysis, scenario valuation and capital-structure modelling underpin explicit long and short theses, with dated catalysts and conditions that would overturn each case. Each memo connects its valuation to the business mechanism and assumptions behind it.
+These investment cases connect potential mispricing to a specific business mechanism: the credibility of private-market valuations at StepStone and HarbourVest, contract-backed debt repayment at Nakilat, and contractual protection against fleet-value risk at Sixt. Financial-statement analysis and capital-structure modelling inform bear, base and bull valuations. Each memo states the assumptions behind its target price, dated catalysts and evidence that would overturn the thesis.
