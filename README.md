@@ -33,3 +33,9 @@ Durable purchases can return to their previous rate while leaving a cumulative s
 ## 6. [Investment Memos](https://github.com/Amanjeet-S/Investment-Memos)
 
 These investment cases connect potential mispricing to a specific business mechanism: the credibility of private-market valuations at StepStone and HarbourVest, contract-backed debt repayment at Nakilat, and contractual protection against fleet-value risk at Sixt. Financial-statement analysis and capital-structure modelling inform bear, base and bull valuations. Each memo states the assumptions behind its target price, dated catalysts and evidence that would overturn the thesis.
+
+## 7. [Prices as Eigenvectors](https://github.com/Amanjeet-S/Prices-as-Eigenvectors)
+
+This MATLAB project applies linear algebra and real analysis to Walrasian equilibrium in exchange economies. With Cobb-Douglas preferences, equilibrium market values are the eigenvector of a column-stochastic expenditure matrix, which yields exact rational prices; Newton's method in log prices extends the solution to CES preferences, and the implicit function theorem gives the price response to endowment transfers. Existence is proved for two goods with the intermediate value theorem, while a textbook economy with three equilibria and Scarf's cycling example show where uniqueness and price adjustment fail. Each result is proved or cited and checked by a unit test.
+
+[Proofs](https://github.com/Amanjeet-S/Prices-as-Eigenvectors/blob/main/docs/proofs.md) · [Figures](https://github.com/Amanjeet-S/Prices-as-Eigenvectors/tree/main/results)
