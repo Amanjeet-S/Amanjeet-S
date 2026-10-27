@@ -8,9 +8,9 @@ This study tests the crash-risk explanation for currency carry returns by pricin
 
 ## 2. [Option Exercise-Policy Evaluation](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation)
 
-The project separates the quality of an option-exercise strategy from the tightness of its numerical assessment. Regression Monte Carlo builds stopping rules for a funded put model, while conditional expectations generate martingale bounds on the value forgone by those decisions. Centred value functions reduce estimated gaps between upper bounds and strategy values by approximately 91–95 per cent in the retained comparisons, without changing exercise decisions. Further experiments distinguish training variability from evaluation noise to assess how computation should be allocated.
+I assess fitted Bermudan exercise policies by separating policy shortfall, martingale slack, numerical integration error and sampling uncertainty. The study compares one-dimensional pricing references with multiasset Monte Carlo benchmarks, including verified conditional integration and independent policy evaluation. Coverage experiments and matched computational comparisons test whether tighter numerical assessments support reliable monetary decisions.
 
-[Paper](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation/blob/main/paper/Exercise_Policy_Loss_under_Computational_and_Financial_Constraints.pdf) · [Reproduction](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation/blob/main/docs/reproducing_paper.md)
+[Paper](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation/blob/main/paper/Assessing_Bermudan_Exercise_Policies.pdf) · [Reproduction](https://github.com/Amanjeet-S/Option-Exercise-Policy-Evaluation/blob/main/docs/reproducing_paper.md)
 
 ## 3. [Deep Hedging: An Independent Replication](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication)
 
@@ -18,13 +18,13 @@ This replication tests whether neural-network hedging reduces tail losses relati
 
 [Research note](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication/blob/main/docs/replication_report.pdf) · [Executed notebook](https://github.com/Amanjeet-S/Deep-Hedging-CVAR95-Replication/blob/main/reproduction.ipynb)
 
-## 4. [Quantum Basket Pricing](https://github.com/Amanjeet-S/Quantum-Basket-Pricing) (private)
+## 4. [Quantum Basket Pricing](https://github.com/Amanjeet-S/Quantum-Basket-Pricing)
 
 The working paper investigates how payoff representation changes the cost of quantum pricing for capped basket derivatives. Gaussian conditioning and certified error bounds support comparisons under matched model, accuracy and confidence requirements, including preparation and arithmetic costs. Across four synthetic contracts, shared-threshold preparation reduces logical T-gate upper bounds by 2.34–10.00 per cent relative to the cheaper of two equally optimised implementations. Companion studies cover PDE pricing, parameter inference and constrained hedging. These results do not establish practical quantum advantage.
 
 [Papers](https://github.com/Amanjeet-S/Quantum-Basket-Pricing/blob/main/paper/README.md)
 
-## 5. [Monetary Tightening and Household Purchases](https://github.com/Amanjeet-S/Monetary-Policy) (private)
+## 5. [Monetary Tightening and Household Purchases](https://github.com/Amanjeet-S/Monetary-Policy)
 
 Durable purchases can return to their previous rate while leaving a cumulative shortfall. This study tests whether the first-year decline in US durable purchases after monetary tightening is offset over the next two years. Narrative policy shocks and cumulative-response regressions estimate early and later responses jointly, with inference allowing for serial dependence. At the point estimates, later purchases deepen the initial shortfall; longer policy-history controls and leverage adjustment weaken precision.
 
